@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/bee.webp">
+    <title>Jewelry for YOU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <script src="/scripts/script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+    <main class="main">
+        <div class="main__item">
+            <h1 class="main__title">Designer jewelry for you</h1>
+            <p class="main__text">Jewelry created with love &#9829;</p>
+            <a href="#" class="link">Checkout &#8594;</a>
+        </div>
+
+        <div class="main__images">
+
+            <svg width="352" height="536">
+                <pattern id="pattern" width="100%" height="100%">
+                    <image xlink:href="/img/vinicius-amnx-amano-unsplash.jpeg" width="352" height="536" preserveAspectRatio="xMidYMin slice"></image>
+                    </pattern>
+                    <path d="M0 0.204529H182.212C275.548 0.204529 351.212 75.8684 351.212 169.205V537H176C78.7979 537 0 458.202 0 361V0.204529Z" fill="url(#pattern)"/>
+                    </svg>
+
+                    <svg width="233" height="318">
+                        <pattern id="patternMin" width="100%" height="100%">
+                            <image xlink:href="/img/nataliya-melnychuk-unsplash.jpeg" width="233" height="318" preserveAspectRatio="xMidYMin slice"></image>
+                            </pattern>
+                            <path d="M0 0H112.227C179.053 0 223.227 54.1735 233.227 121V319H0V0Z" fill="url(#patternMin)"/>
+                            </svg>    
+        </div>
+    </main>
+
+    <section class="products">
+        <h2 class="title-h2">Gallery</h2>
+        <div class="grid">
+            <div class="grid__cover">
+                <img src="/img/karly-jones-unsplash.jpeg" alt="Work-1">
+            </div>
+            <div class="grid__cover">
+                <img src="/img/nataliya-unsplash.jpeg" alt="Work-2">
+            </div>
+            <div class="grid__cover">
+                <img src="/img/mykola-kolya-korzh-unsplash.jpeg" alt="Work-3">
+            </div>
+            <div class="grid__cover">
+                <img src="/img/martin-de-arriba-unsplash.jpeg" alt="Work-4">
+            </div>
+        </div>
+    </section>
+
+    <div class="cost">
+       <div class="cost__img">
+        <svg width="344" height="444">
+            <pattern id="patternCost" width="100%" height="100%">
+                <image xlink:href="/img/Bee-lewis-x-unsplash.jpeg" width="344" height="444" preserveAspectRatio="xMidYMin slice"></image>
+                </pattern>
+                <path d="M0 170C0 76.1116 76.1116 0 170 0H174C267.888 0 344 76.1116 344 170V274C344 367.888 267.888 444 174 444H170C76.1116 444 0 367.888 0 274V170Z" fill="url(#patternCost)"/>
+                </svg>
+            </div>
+
+        <div class="cost__title">
+        <svg class="circle" width="200" height="200" viewBox="0 0 200 200">
+            <path id="circleShape" class="circle__shape" d="M 20, 100 a 80, 80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none"></path>
+            <path class="circle__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" stroke="#836770" stroke-width="2"></path>
+            <text class="circle__text">
+                <textPath href="#circleShape" fill="#3D4856">Calculate the cost</textPath>
+                </text>
+        </svg>
+        </div>
+
+        <div class="cost__calc">
+        <form class="form">
+            <p class="form__text">Select product:</p>
+            <select class="form__select" id="selectProduct">
+                <option value="0" selected disabled>Select from list</option>
+                <option value="50" >Bracelet (50 $)</option>
+                <option value="100" >Earrring (100 $)</option>
+                <option value="60" >Necklace (60 $)</option>
+                <option value="30" >Ring (30 $)</option>
+            </select>
+            <p class="form__text">Indicate quantity:</p>
+            <input id="quantityProduct" class="form__input" type="number" value="0" min="0">
+            <button type="button" class="link" id="btnProduct">Order now</button>
+        </form>
+        <div id="infoProduct" class="total" style="display:none;">
+            <p class="total__price">Total: <span id="priceProduct"></span> $</p>
+            <p class="total__info">Leave a request by mail: <a href="mailto:order@Jewelry.com" class="total__email">order@Jewelry.com</a></p>
+        </div>
+        </div>
+    </div>
+
+<footer class="footer">
+<div class="container__footer">
+
+    <ul class="footer__list">
+        <li><a href="#" class="link__footer">Home</a></li>
+        <li><a href="#" class="link__footer">About</a></li>
+        <li><a href="#" class="link__footer">Gallery</a></li>
+    </ul>
+
+
+<div class="footer__logo">
+<img class="footer__img" src="/img/bee.webp" alt="Bee">	
+</div>
+
+<div class="footer__icon">
+    <ul class="footer__icon-list">
+        <li><a href="#"><img src="/img/Instagram.svg" alt="Instagram" class=img__icon></a></li>
+        <li><a href="#"><img src="/img/WhatsApp.svg" alt="WhatsApp" class=img__icon></a></li>
+        <li><a href="#"><img src="/img/Facebook.svg" alt="FB" class=img__icon></a></li>
+
+    </ul>
+</div>
+
+</div>
+</footer>
+
+</div>
+</body>
+</html>
